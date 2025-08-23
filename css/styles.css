@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  min-width: 360px;
+}
+
+.content {
+  padding: 20px 30px 20px 30px;
+}
+
+.button {
+  font-weight: bold;
+  color: white;
+  background-color: #2476ff;
+  padding: 15px 25px;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+/*!!! Add Transition*/
+.button:hover {
+  border: 3px solid #2476ff;
+  color: #2476ff;
+  background-color: white;
+}
+
+/* MARK: Header
+*/
+.header-content {
+  background-color: #f6f8fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.top-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.trigram {
+  display: none;
+}
+
+.top-navigation ul {
+  padding: 0;
+  list-style-type: none;
+  /* ------  */
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.top-navigation ul li a {
+  text-decoration: none;
+  color: #677788;
+}
+
+.top-navigation ul li a:hover {
+  color: #2476ff;
+}
+
+/* MARK: Emp. Teams Content
+*/
+/*!!! Add Animation to logos*/
+.bg-img {
+  background-image: url(/assets/bg/background-top.svg);
+  height: 500px;
+  margin: 0;
+}
+
+.empowering-teams {
+  display: flex;
+}
+
+.empowering-teams-content {
+  margin-top: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.empowering-teams-content p {
+  color: #677788;
+  padding-top: 10px;
+}
+
+.empowering-teams-content h1 {
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.empowering-teams-buttons {
+  padding-top: 35px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.empowering-teams-buttons a {
+  text-decoration: none;
+  color: #2476ff;
+  font-weight: bold;
+}
+
+.empowering-teams-buttons {
+  display: flex;
+}
+
+.empowering-teams-icons {
+  display: flex;
+  flex: 2;
+}
+
+/* MARK: Emp. Teams Icons
+*/
+
+.img-icons {
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+  border-radius: 50%;
+  overflow: visible;
+  background-color: white;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.img-icons img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.sml {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+#i-google {
+  position: relative;
+  left: 300px;
+  top: 40px;
+}
+
+#i-altassian {
+  position: relative;
+  left: 370px;
+  top: 45px;
+}
+
+#i-asana {
+  position: relative;
+  left: 610px;
+  top: 40px;
+}
+
+#i-paypal {
+  position: relative;
+  left: 65px;
+  top: 180px;
+}
+
+#i-weave {
+  position: relative;
+  left: 200px;
+  top: 185px;
+}
+
+/* ----- ***** -----  */
+#i-google-ads {
+  position: relative;
+  left: -20px;
+  top: 405px;
+}
+/* ----- ***** -----  */
+
+#i-calendar {
+  position: relative;
+  left: 300px;
+  top: 420px;
+}
+/* MARK: Why Front
+*/
+
+/* MARK: Pricing
+*/
+
+/* MARK: Hire Us
+*/
+
+/* MARK: Footer
+*/

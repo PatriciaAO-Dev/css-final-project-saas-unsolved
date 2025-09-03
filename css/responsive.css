@@ -1,0 +1,17 @@
+/* MARK: DESKTOP 
+*/
+@media (min-width: 1024px) {
+}
+
+/* MARK: TABLET 
+*/
+@media (max-width: 1023px) {
+  .content {
+    background-color: aqua;
+  }
+}
+/* MARK: MOBILE 
+*/
+
+@media (max-width: 767px) {
+}

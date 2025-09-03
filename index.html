@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +12,10 @@
       rel="stylesheet"
     />
     <script src="https://use.fontawesome.com/3f1495bd79.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0cb5bfd878.js"
+      crossorigin="anonymous"
+    ></script>
     <title>SAAS Company</title>
   </head>
   <body>
@@ -34,14 +39,17 @@
     </header>
     <section>
       <!-- MARK: Empowering teams  
-    -->
+        -->
       <div class="bg-img">
         <div class="content empowering-teams">
           <div class="empowering-teams-content">
             <h1>Empowering teams with the freedom</h1>
             <p>Own the unlimited power of the web development</p>
             <div class="empowering-teams-buttons">
-              <button class="button">Play Video</button>
+              <!-- <button class="button">Play Video</button> -->
+              <button class="play-video-button">
+                <i class="fa-solid fa-circle-play"></i>Play Video
+              </button>
               <a href="">Learn more</a>
             </div>
           </div>
@@ -51,18 +59,11 @@
               id="i-google"
               class="img-icons sml"
             />
-            <!-- <div
-              class="icon i-altassian"
-              style="background-image: url(/assets/logos/atlassian.png)"
-            ></div> -->
-            <div class="img-icons" id="i-altassian">
-              <img src="/assets/logos/atlassian.png" />
-            </div>
-            <!-- <img
+            <img
               src="/assets/logos/atlassian.png"
               id="i-altassian"
               class="img-icons"
-            /> -->
+            />
             <img src="/assets/logos/asana.png" id="i-asana" class="img-icons" />
             <img
               src="/assets/logos/paypal.jpg"
@@ -81,6 +82,127 @@
               class="img-icons"
             />
           </div>
+        </div>
+      </div>
+      <!-- MARK: Why Front  
+    -->
+      <div class="content why-front">
+        <div class="why-front-content">
+          <h2 class="titles">Why Front?</h2>
+          <p class="descriptions">
+            Front is an incredibly beautiful, fully responsive, and mobile-first
+            projects on <br />
+            the web - it is the starting point for creative sites
+          </p>
+        </div>
+        <!-- ------------------------------  -->
+        <div class="lined-description">
+          <div class="description">
+            <div class="circle"></div>
+            <span>Basic elements</span>
+          </div>
+          <div class="line"></div>
+          <div class="description">
+            <div class="circle"></div>
+            <span>Components</span>
+          </div>
+          <div class="line"></div>
+          <div class="description">
+            <div class="circle"></div>
+            <span>Combined components</span>
+          </div>
+          <div class="line"></div>
+          <div class="description">
+            <div class="circle"></div>
+            <span>Page layouts</span>
+          </div>
+        </div>
+        <!-- ------------------------------  -->
+      </div>
+      <!-- MARK: Pricing  
+    -->
+      <div class="content pricing">
+        <div class="pricing-plan-title">
+          <h2 class="titles">Pricing</h2>
+          <p class="descriptions">No additional costs. Pay for what you see</p>
+        </div>
+        <div class="pricing-plans-n-features">
+          <div class="pricing-plan">
+            <div class="price">
+              <span class="amount">59</span>
+              <span class="unit">/ mo</span>
+            </div>
+            <hr />
+            <p>
+              Start your Front businessnow. 100% guaranteed money back. No
+              questions asked.
+            </p>
+            <div class="button-small-text">
+              <button class="play-video-button">
+                <i class="fa-solid fa-circle-play"></i>Play Video
+              </button>
+              <p>No credit card required.</p>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="feature-components feature">
+              <img src="assets/images/components.svg" class="features-images" />
+              <h3>Hundreds of components</h3>
+              <p>
+                Achive maximum productivity with minimum effort with Front and
+                create robust limitless products.
+              </p>
+            </div>
+            <div class="feature-image feature">
+              <img src="assets/images/images.svg" class="features-images" />
+              <h3>Images included</h3>
+              <p>
+                Images included. We made custom license for all of our premium
+                images in the front.
+              </p>
+            </div>
+            <div class="feature-cancel feature">
+              <img src="assets/images/cancel.svg" class="features-images" />
+              <h3>Cancel anytime <span class="sketch">sketch</span></h3>
+              <p>If it's not for you, just cancel, no hidden costs or fees.</p>
+            </div>
+            <div class="feature-money feature">
+              <img src="assets/images/moneyback.svg" class="features-images" />
+              <h3>Money back</h3>
+              <p>100% guaranteed money back. No questions asked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content hire-us">
+        <div class="hire-us-reviews">
+          <div class="hire-us-title">
+            <h2>Hire Us</h2>
+            <p>Whatever your goal - we will get you there</p>
+          </div>
+          <hr />
+          <p class="review">
+            " I love front! I love the ease of use, I love the fact that I have
+            total creative freedom..."
+          </p>
+          <div class="profile-content">
+            <h3>Oliver Queen</h3>
+            <p>Head of Commercials, Slack</p>
+            <img src="/assets/images/man_one.jpg" />
+          </div>
+        </div>
+        <div class="hire-us-form">
+          <form>
+            <p>Fill out the form and we'll be in touch as soon as possible</p>
+            <div class="form-names">
+              <input type="text" placeholder="First name" />
+              <input type="text" placeholder="Last name" />
+            </div>
+            <input type="email" placeholder="Email" />
+            <div class="form-budget-country">
+              <input />
+            </div>
+          </form>
         </div>
       </div>
     </section>

@@ -9,12 +9,16 @@ body {
 
   font-size: 16px;
   min-width: 360px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .content {
   padding: 20px 30px 20px 30px;
 }
 
+/* MARK: Reusables
+ */
 .button {
   font-weight: bold;
   color: white;
@@ -23,18 +27,52 @@ body {
   border: 3px solid white;
   border-radius: 50px;
 }
-
-/*!!! Add Transition*/
-.button:hover {
+.button:hover,
+.play-video-button:hover {
   border: 3px solid #2476ff;
   color: #2476ff;
   background-color: white;
 }
+.play-video-button {
+  max-width: 150px;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  background-color: #2476ff;
+  padding: 15px 25px;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+.play-video-button i {
+  font-size: 17px;
+  color: white;
+  margin-right: 10px;
+}
+
+.play-video-button:hover i {
+  color: #2476ff;
+  background-color: white;
+}
+.titles {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.descriptions {
+  text-align: center;
+  color: #677788;
+}
+/*!!! Add Transition*/
+/* [ ]TODO: Add delay transition to button  */
+/* [ ]TODO: Add extend background  */
 
 /* MARK: Header
 */
 .header-content {
-  background-color: #f6f8fa;
+  /* background-color: #f6f8fa; */
+  background-color: #01c9a7;
+  overflow: visible;
+  background-clip: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +116,7 @@ body {
 /* MARK: Emp. Teams Content
 */
 /*!!! Add Animation to logos*/
+/* [ ]TODO: Add animation to logos  */
 .bg-img {
   background-image: url(/assets/bg/background-top.svg);
   height: 500px;
@@ -131,9 +170,10 @@ body {
   flex: 2;
 }
 
-/* MARK: Emp. Teams Icons
+/* MARK: Emp. Teams Logos
 */
-
+/*!!! change logo position to RIGHT side  */
+/* [ ] TODO: change logo positions */
 .img-icons {
   width: 70px;
   height: 70px;
@@ -158,19 +198,19 @@ body {
 }
 #i-google {
   position: relative;
-  left: 300px;
+  right: -300px;
   top: 40px;
 }
 
 #i-altassian {
   position: relative;
-  left: 370px;
+  right: -370px;
   top: 45px;
 }
 
 #i-asana {
   position: relative;
-  left: 610px;
+  right: -610px;
   top: 40px;
 }
 
@@ -186,13 +226,11 @@ body {
   top: 185px;
 }
 
-/* ----- ***** -----  */
 #i-google-ads {
   position: relative;
   left: -20px;
   top: 405px;
 }
-/* ----- ***** -----  */
 
 #i-calendar {
   position: relative;
@@ -201,12 +239,188 @@ body {
 }
 /* MARK: Why Front
 */
+.why-front {
+  display: flex;
+  margin-top: 35px;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.why-front-content {
+  display: flex;
+  flex-direction: column;
+}
+/* --------  */
+.lined-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #2476ff;
+  border-radius: 50%;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: rgba(59, 130, 246, 0.1);
+  margin: 0;
+  margin-bottom: 30px;
+}
 
 /* MARK: Pricing
 */
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.pricing-plans-n-features {
+  display: flex;
+  gap: 10px;
+}
+.pricing-plan {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 90px 35px 70px 35px;
+  color: #677788;
+  line-height: 25px;
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 35px;
+}
+.price {
+  display: flex;
+  align-items: flex-end;
+  color: black;
+}
+
+.amount {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.unit {
+  margin-left: 5px;
+  margin-bottom: -9px;
+  color: #677788;
+}
+
+.button-small-text {
+  line-height: 35px;
+  font-size: small;
+  margin-top: 35px;
+}
+
+.pricing-features {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 350px;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.features-images {
+  height: 60px;
+  width: 60px;
+}
+
+.sketch {
+  padding: 5px 15px 5px;
+  margin-left: 5px;
+  color: white;
+  background-color: #01c9a7;
+  border-radius: 40px;
+  font-size: small;
+  font-weight: 400;
+}
 
 /* MARK: Hire Us
 */
+
+.hire-us {
+  background-color: #20335b;
+
+  display: flex;
+}
+
+.hire-us-reviews {
+  color: #ffffff;
+  padding: 80px 20px 80px 50px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 50px;
+}
+
+.hire-us-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hire-us-title p {
+  color: #677788;
+}
+.hire-us-form {
+  flex: 1;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-content img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.hire-us-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+}
 
 /* MARK: Footer
 */

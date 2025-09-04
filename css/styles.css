@@ -20,6 +20,15 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: #677788;
+}
+
+a:hover {
+  color: #2476ff;
+}
+
 /* MARK: Reusables
  */
 .button {
@@ -71,7 +80,7 @@ body {
 }
 /*!!! Add Transition*/
 /* [ ]TODO: Add delay transition to button  */
-/* [ ]TODO: Extend background  */
+/* [x]TODO: Extend background  */
 
 /* MARK: Header
 */
@@ -112,15 +121,6 @@ header {
   display: flex;
   flex-direction: row;
   gap: 35px;
-}
-
-.top-navigation ul li a {
-  text-decoration: none;
-  color: #677788;
-}
-
-.top-navigation ul li a:hover {
-  color: #2476ff;
 }
 
 /* MARK: Emp. Teams Content
@@ -182,7 +182,6 @@ header {
 
 /* MARK: Emp. Teams Logos
 */
-/*!!! change logo position to RIGHT side  */
 /* [ ] TODO: change logo positions */
 .img-icons {
   width: 70px;
@@ -516,4 +515,42 @@ form > button {
 /* MARK: Footer
 */
 
-/* [ ] TODO: update colors in form and you're ready to commit / push */
+.footer-content {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column h2 {
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 135px;
+  height: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+.fa-phone,
+.fa-location-arrow {
+  color: #677788;
+  margin: 0 10px;
+}
+
+.hiring {
+  background-color: #2476ff;
+  color: white;
+  font-size: xx-small;
+  padding: 2px 5px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+/* [x] TODO: update colors in form and you're ready to commit / push */

@@ -45,6 +45,8 @@ a:hover {
   border: 3px solid #2476ff;
   color: #2476ff;
   background-color: white;
+  transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
 }
 
 .play-video-button {
@@ -67,6 +69,8 @@ a:hover {
 .play-video-button:hover i {
   color: #2476ff;
   background-color: white;
+  transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
 }
 
 .titles {
@@ -184,9 +188,9 @@ header {
 */
 /* [ ] TODO: change logo positions */
 .img-icons {
-  width: 70px;
-  height: 70px;
-  padding: 15px;
+  width: 90px;
+  height: 90px;
+  padding: 20px;
   border-radius: 50%;
   overflow: visible;
   background-color: white;
@@ -201,9 +205,9 @@ header {
 }
 
 .sml {
-  width: 50px;
-  height: 50px;
-  padding: 7px;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
 }
 #i-google {
   position: relative;
@@ -213,7 +217,7 @@ header {
 
 #i-altassian {
   position: relative;
-  right: -370px;
+  right: -390px;
   top: 45px;
 }
 
@@ -225,14 +229,14 @@ header {
 
 #i-paypal {
   position: relative;
-  left: 65px;
-  top: 180px;
+  /* left: px; */
+  top: 230px;
 }
 
 #i-weave {
   position: relative;
-  left: 200px;
-  top: 185px;
+  left: 250px;
+  top: 270px;
 }
 
 #i-google-ads {
@@ -243,7 +247,7 @@ header {
 
 #i-calendar {
   position: relative;
-  left: 300px;
+  left: 200px;
   top: 420px;
 }
 /* MARK: Why Front
@@ -310,10 +314,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 45px;
+  margin: 100px auto;
 }
 
 .pricing-plans-n-features {
   display: flex;
+  justify-content: space-evenly;
   gap: 10px;
 }
 .pricing-plan {
@@ -354,6 +360,7 @@ header {
   display: flex;
   flex: 2;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .feature {
@@ -391,6 +398,7 @@ header {
 .hire-us {
   padding: 50px;
   display: flex;
+  gap: 100px;
 }
 
 .hire-us-reviews {
@@ -499,6 +507,7 @@ input[type="checkbox"] {
 }
 
 .privacy-links a {
+  margin-bottom: 15px;
   font-weight: 500;
   text-decoration-line: underline;
   text-decoration-style: dashed;
@@ -510,7 +519,7 @@ input[type="checkbox"] {
 }
 
 form > button {
-  margin: auto;
+  margin: 15px auto;
 }
 /* MARK: Footer
 */

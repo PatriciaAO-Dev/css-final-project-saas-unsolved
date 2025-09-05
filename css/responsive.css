@@ -11,9 +11,9 @@
 */
 
 @media (max-width: 1023px) {
-  /* .content {
-    background-color: aqua;
-  } */
+  .content {
+    background-color: rgb(245, 230, 243);
+  }
   /* HEADER  */
   .trigram {
     display: block;
@@ -30,49 +30,68 @@
 
   /* EMP TEAMS  */
   .empowering-teams {
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .empowering-teams-content {
+    display: flex;
+    flex: 1;
     text-align: center;
     align-items: center;
   }
 
   .empowering-teams-icons {
+    position: relative;
     display: flex;
+    flex: 2;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 150px;
   }
 
   #i-google {
-    right: -200px;
-    top: 50px;
+    position: absolute;
+    left: 15%;
+    top: 10%;
   }
 
   #i-altassian {
-    top: 70px;
+    position: absolute;
+    left: 45%;
+    top: 15%;
   }
 
   #i-asana {
-    top: 50px;
+    position: absolute;
+    left: 80%;
+    top: 10%;
   }
 
   #i-paypal {
-    left: -100px;
-    top: 200px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
   }
 
   #i-weave {
-    top: 200px;
+    position: absolute;
+    left: 60%;
+    top: 50%;
   }
 
   #i-google-ads {
-    top: 300px;
+    position: absolute;
+    left: 35%;
+    top: 85%;
   }
 
   #i-calendar {
-    top: 360px;
+    position: absolute;
+    left: 72%;
+    top: 90%;
   }
-
   .up,
   .left {
     animation: none !important;
@@ -144,7 +163,93 @@
 
 @media (max-width: 767px) {
   .content {
-    /* background-color: aqua; */
+    background-color: rgb(209, 246, 246);
+  }
+
+  /* Emp Teams Icons  */
+  #i-google {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+  #i-altassian {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+  }
+
+  #i-asana {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+  }
+
+  #i-paypal {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  #i-weave {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+  }
+
+  #i-google-ads {
+    position: absolute;
+    left: 30%;
+    top: 85%;
+  }
+
+  #i-calendar {
+    position: absolute;
+    left: 80%;
+    top: 90%;
+  }
+  /* Why Front  */
+  .why-front {
+  }
+
+  .lined-description {
+    margin: 0 30%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .description {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  /* Pricing Features  */
+  .top-features,
+  .bottom-features {
+    flex-direction: column;
+  }
+
+  /* Hire Us  */
+  .hire-us-reviews,
+  .profile-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  form {
+    /* margin: auto; */
+  }
+  /* FOOTER  */
+  .footer-content,
+  .top-footer,
+  .bottom-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
   }
 }
 

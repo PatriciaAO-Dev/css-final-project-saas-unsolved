@@ -175,14 +175,18 @@ header {
 }
 
 .empowering-teams-icons {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex: 2;
+  gap: 5px;
 }
 
 /* MARK: Emp. Teams Logos
 */
 /* [x] TODO: change logo positions */
 .img-icons {
+  object-fit: contain;
   width: 90px;
   height: 90px;
   padding: 20px;
@@ -196,54 +200,58 @@ header {
   width: 100%;
   height: 100%;
   position: relative;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 
 .sml {
+  object-fit: contain;
+
   width: 70px;
   height: 70px;
   padding: 10px;
 }
+
 #i-google {
-  position: relative;
-  right: -250px;
-  top: 40px;
+  position: absolute;
+  left: 25%;
+  top: 10%;
 }
 
 #i-altassian {
-  position: relative;
-  right: -390px;
-  top: 45px;
+  position: absolute;
+  left: 50%;
+  top: 15%;
 }
 
 #i-asana {
-  position: relative;
-  right: -610px;
-  top: 40px;
+  position: absolute;
+  left: 90%;
+  top: 10%;
 }
 
 #i-paypal {
-  position: relative;
-  left: -50px;
-  top: 230px;
+  position: absolute;
+  left: 23%;
+  top: 58%;
 }
 
 #i-weave {
-  position: relative;
-  left: 250px;
-  top: 270px;
+  position: absolute;
+  left: 65%;
+  top: 60%;
 }
 
 #i-google-ads {
-  position: relative;
-  left: -20px;
-  top: 405px;
+  position: absolute;
+  left: 40%;
+  top: 90%;
 }
 
 #i-calendar {
-  position: relative;
-  left: 200px;
-  top: 420px;
+  position: absolute;
+  left: 80%;
+  top: 99%;
 }
 /* MARK: Why Front
 */

@@ -2,17 +2,156 @@
 */
 
 @media (min-width: 1024px) {
+  .trigram {
+    display: none;
+  }
 }
 
 /* MARK: TABLET 
 */
+
 @media (max-width: 1023px) {
-  .content {
+  /* .content {
     background-color: aqua;
+  } */
+  /* HEADER  */
+  .trigram {
+    display: block;
+    font-size: x-large;
+    color: #677788;
+    background-color: #f6f8fa;
+    border: none;
+  }
+
+  .top-navigation ul,
+  .top-navigation .button {
+    display: none;
+  }
+
+  /* EMP TEAMS  */
+  .empowering-teams {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .empowering-teams-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .empowering-teams-icons {
+    display: flex;
+  }
+
+  #i-google {
+    right: -200px;
+    top: 50px;
+  }
+
+  #i-altassian {
+    top: 70px;
+  }
+
+  #i-asana {
+    top: 50px;
+  }
+
+  #i-paypal {
+    left: -100px;
+    top: 200px;
+  }
+
+  #i-weave {
+    top: 200px;
+  }
+
+  #i-google-ads {
+    top: 300px;
+  }
+
+  #i-calendar {
+    top: 360px;
+  }
+
+  .up,
+  .left {
+    animation: none !important;
+  }
+
+  /* WHY FRONT  */
+  .why-front {
+    margin-top: 300px;
+  }
+
+  /* PRICING  */
+  .pricing-plans-n-features {
+    flex-direction: column;
+  }
+
+  .pricing-plan {
+    margin: 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-plan hr {
+    width: 100%;
+    flex-grow: 1;
+    /* border-top: 1px solid #677788; */
+  }
+
+  /* HIRE US  */
+  .hire-us {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hire-us-reviews {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .privacy-links {
+    margin-left: 50px;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+  /* FOOTER  */
+  .footer-content {
+    gap: 20px;
+  }
+
+  .tablet-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .top-footer {
+    display: flex;
+    gap: 150px;
+  }
+
+  .bottom-footer {
+    display: flex;
+    gap: 100px;
   }
 }
 /* MARK: MOBILE 
 */
 
 @media (max-width: 767px) {
+  .content {
+    /* background-color: aqua; */
+  }
 }
+
+/* COLORS 
+GREY
+#677788
+
+BLUE
+#2476ff
+*/

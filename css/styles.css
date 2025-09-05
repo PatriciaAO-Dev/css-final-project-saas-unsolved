@@ -9,15 +9,13 @@ body {
 
   font-size: 16px;
   min-width: 360px;
-  /* max-width: 1400px; */
-  /* margin: auto; */
 }
 
 .content {
-  /* padding: 20px 30px 20px 30px; */
   max-width: 1400px;
   padding: 15px 30px;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 a {
@@ -83,7 +81,7 @@ a:hover {
   color: #677788;
 }
 /*!!! Add Transition*/
-/* [ ]TODO: Add delay transition to button  */
+/* [x]TODO: Add delay transition to button  */
 /* [x]TODO: Extend background  */
 
 /* MARK: Header
@@ -93,9 +91,6 @@ header {
   background-color: #f6f8fa;
 }
 .header-content {
-  /* overflow: visible;
-  background-clip: border-box; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,10 +109,6 @@ header {
   gap: 25px;
 }
 
-.trigram {
-  display: none;
-}
-
 .top-navigation ul {
   padding: 0;
   list-style-type: none;
@@ -130,7 +121,7 @@ header {
 /* MARK: Emp. Teams Content
 */
 /*!!! Add Animation to logos*/
-/* [ ]TODO: Add animation to logos  */
+/* [x]TODO: Add animation to logos  */
 .bg-img {
   background-image: url(/assets/bg/background-top.svg);
   height: 500px;
@@ -171,8 +162,12 @@ header {
 
 .empowering-teams-buttons a {
   text-decoration: none;
-  color: #2476ff;
+  color: #677788;
   font-weight: bold;
+}
+
+.empowering-teams-buttons a:hover {
+  color: #2476ff;
 }
 
 .empowering-teams-buttons {
@@ -186,7 +181,7 @@ header {
 
 /* MARK: Emp. Teams Logos
 */
-/* [ ] TODO: change logo positions */
+/* [x] TODO: change logo positions */
 .img-icons {
   width: 90px;
   height: 90px;
@@ -211,7 +206,7 @@ header {
 }
 #i-google {
   position: relative;
-  right: -300px;
+  right: -250px;
   top: 40px;
 }
 
@@ -229,7 +224,7 @@ header {
 
 #i-paypal {
   position: relative;
-  /* left: px; */
+  left: -50px;
   top: 230px;
 }
 
@@ -327,7 +322,7 @@ header {
   padding: 90px 35px 70px 35px;
   color: #677788;
   line-height: 25px;
-  max-width: 390px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -358,9 +353,15 @@ header {
 
 .pricing-features {
   display: flex;
-  flex: 2;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  flex: 3;
+  justify-content: center;
+}
+
+.top-features,
+.bottom-features {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .feature {
@@ -417,9 +418,14 @@ header {
   gap: 15px;
 }
 
-.hire-us-title p {
+.gray {
   color: #677788;
 }
+
+.review {
+  color: #ffffff;
+}
+
 .hire-us-form {
   flex: 1;
 }
@@ -454,7 +460,7 @@ select {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 15px;
-  max-width: 500px;
+  min-width: 500px;
 }
 
 .form-content {
@@ -493,7 +499,7 @@ textarea {
 .radio-label {
   color: gray;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 input[type="checkbox"] {
@@ -530,6 +536,13 @@ form > button {
   justify-content: space-evenly;
 }
 
+.tablet-footer,
+.top-footer,
+.bottom-footer {
+  display: flex;
+  gap: 90px;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -548,9 +561,15 @@ form > button {
 }
 
 .fa-phone,
-.fa-location-arrow {
+.fa-location-arrow,
+.fa-circle-info,
+.fa-user {
   color: #677788;
   margin: 0 10px;
+}
+
+.address:hover {
+  color: #2476ff;
 }
 
 .hiring {

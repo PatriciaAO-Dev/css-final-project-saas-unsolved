@@ -5,15 +5,46 @@
   .trigram {
     display: none;
   }
+
+  a:hover {
+    color: #2476ff;
+  }
+
+  .button:hover,
+  .play-video-button:hover {
+    border: 2px solid #2476ff;
+    color: #2476ff;
+    background-color: white;
+    transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out,
+      height 0.5s ease-in-out;
+  }
+
+  .play-video-button:hover i {
+    color: #2476ff;
+    background-color: white;
+    transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out,
+      height 0.5s ease-in-out;
+  }
+
+  .empowering-teams-buttons a:hover {
+    color: #2476ff;
+  }
+
+  .pricing-plan:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease-in-out, width 0.5s ease-in-out,
+      height 0.5s ease-in-out;
+  }
+
+  .privacy-links a:hover {
+    color: #2476ff;
+  }
 }
 
 /* MARK: TABLET 
 */
 
 @media (max-width: 1023px) {
-  .content {
-    background-color: rgb(245, 230, 243);
-  }
   /* HEADER  */
   .trigram {
     display: block;
@@ -117,7 +148,6 @@
   .pricing-plan hr {
     width: 100%;
     flex-grow: 1;
-    /* border-top: 1px solid #677788; */
   }
 
   /* HIRE US  */
@@ -137,6 +167,7 @@
     justify-content: flex-start;
     gap: 35px;
   }
+
   /* FOOTER  */
   .footer-content {
     gap: 20px;
@@ -158,14 +189,11 @@
     gap: 100px;
   }
 }
+
 /* MARK: MOBILE 
 */
 
 @media (max-width: 767px) {
-  .content {
-    background-color: rgb(209, 246, 246);
-  }
-
   /* Emp Teams Icons  */
   #i-google {
     position: absolute;
@@ -208,9 +236,8 @@
     left: 80%;
     top: 90%;
   }
+
   /* Why Front  */
-  .why-front {
-  }
 
   .lined-description {
     margin: 0 30%;
@@ -238,9 +265,6 @@
     text-align: center;
   }
 
-  form {
-    /* margin: auto; */
-  }
   /* FOOTER  */
   .footer-content,
   .top-footer,

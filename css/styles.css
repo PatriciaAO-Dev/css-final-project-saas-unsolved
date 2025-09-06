@@ -23,10 +23,6 @@ a {
   color: #677788;
 }
 
-a:hover {
-  color: #2476ff;
-}
-
 /* MARK: Reusables
  */
 .button {
@@ -34,17 +30,8 @@ a:hover {
   color: white;
   background-color: #2476ff;
   padding: 13px 25px;
-  border: 3px solid #2476ff;
+  border: 2px solid #2476ff;
   border-radius: 50px;
-}
-
-.button:hover,
-.play-video-button:hover {
-  border: 3px solid #2476ff;
-  color: #2476ff;
-  background-color: white;
-  transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out,
-    height 0.5s ease-in-out;
 }
 
 .play-video-button {
@@ -64,13 +51,6 @@ a:hover {
   margin-right: 10px;
 }
 
-.play-video-button:hover i {
-  color: #2476ff;
-  background-color: white;
-  transition: background-color 0.5s ease-in-out, width 0.5s ease-in-out,
-    height 0.5s ease-in-out;
-}
-
 .titles {
   text-align: center;
   margin-bottom: 15px;
@@ -80,9 +60,6 @@ a:hover {
   text-align: center;
   color: #677788;
 }
-/*!!! Add Transition*/
-/* [x]TODO: Add delay transition to button  */
-/* [x]TODO: Extend background  */
 
 /* MARK: Header
 */
@@ -120,8 +97,6 @@ header {
 
 /* MARK: Emp. Teams Content
 */
-/*!!! Add Animation to logos*/
-/* [x]TODO: Add animation to logos  */
 .bg-img {
   background-image: url(/assets/bg/background-top.svg);
   height: 500px;
@@ -166,10 +141,6 @@ header {
   font-weight: bold;
 }
 
-.empowering-teams-buttons a:hover {
-  color: #2476ff;
-}
-
 .empowering-teams-buttons {
   display: flex;
 }
@@ -184,7 +155,6 @@ header {
 
 /* MARK: Emp. Teams Logos
 */
-/* [x] TODO: change logo positions */
 .img-icons {
   object-fit: contain;
   width: 90px;
@@ -200,7 +170,6 @@ header {
   width: 100%;
   height: 100%;
   position: relative;
-  /* object-fit: cover; */
   object-fit: contain;
 }
 
@@ -253,6 +222,7 @@ header {
   left: 80%;
   top: 99%;
 }
+
 /* MARK: Why Front
 */
 .why-front {
@@ -266,7 +236,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-/* --------  */
+
 .lined-description {
   display: flex;
   align-items: center;
@@ -326,7 +296,7 @@ header {
   gap: 10px;
 }
 .pricing-plan {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #babbbb;
   padding: 90px 35px 70px 35px;
   color: #677788;
   line-height: 25px;
@@ -336,6 +306,7 @@ header {
   flex: 1;
   gap: 35px;
 }
+
 .price {
   display: flex;
   align-items: flex-end;
@@ -468,7 +439,7 @@ select {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 15px;
-  min-width: 500px;
+  min-width: 450px;
 }
 
 .form-content {
@@ -504,6 +475,7 @@ textarea {
   color: grey;
   padding: 10px;
 }
+
 .radio-label {
   color: gray;
   display: flex;
@@ -528,13 +500,10 @@ input[type="checkbox"] {
   color: rgb(99, 97, 97);
 }
 
-.privacy-links a:hover {
-  color: #2476ff;
-}
-
 form > button {
   margin: 15px auto;
 }
+
 /* MARK: Footer
 */
 
@@ -588,5 +557,3 @@ form > button {
   margin: 0 5px;
   border-radius: 3px;
 }
-
-/* [x] TODO: update colors in form and you're ready to commit / push */

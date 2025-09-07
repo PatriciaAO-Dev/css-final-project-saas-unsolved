@@ -122,8 +122,9 @@ header {
 }
 
 .empowering-teams-content h1 {
-  font-weight: 400;
+  font-weight: 350;
   font-size: 60px;
+  line-height: 60px;
 }
 
 .empowering-teams-buttons {
@@ -241,7 +242,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  /* width: 80%; */
   margin: 40px auto;
 }
 
@@ -295,12 +296,14 @@ header {
   justify-content: space-evenly;
   gap: 10px;
 }
+
+/* !!! min-width  here or just on tablet ? */
 .pricing-plan {
   border: 1px solid #babbbb;
   padding: 90px 35px 70px 35px;
   color: #677788;
   line-height: 25px;
-  min-width: 350px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -335,6 +338,7 @@ header {
   flex-direction: column;
   flex: 3;
   justify-content: center;
+  width: 100%;
 }
 
 .top-features,
@@ -403,6 +407,8 @@ header {
 
 .review {
   color: #ffffff;
+
+  font-style: italic;
 }
 
 .hire-us-form {
@@ -439,7 +445,6 @@ select {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 15px;
-  min-width: 450px;
 }
 
 .form-content {
@@ -496,8 +501,21 @@ input[type="checkbox"] {
   margin-bottom: 15px;
   font-weight: 500;
   text-decoration-line: underline;
-  text-decoration-style: dashed;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
   color: rgb(99, 97, 97);
+  /* ------  */
+  text-decoration: none; /* Remove default underline */
+  border-bottom: none; /* Remove default border if present */
+  background-image: linear-gradient(
+    to right,
+    rgb(99, 97, 97) 1px,
+    transparent 1px
+  );
+  background-size: 8px 1px; /* Adjust the first value (8px) for dot spacing */
+  background-repeat: repeat-x;
+  background-position: 0 95%;
 }
 
 form > button {
@@ -530,6 +548,9 @@ form > button {
   margin-bottom: 15px;
 }
 
+/* .tablet-footer {
+  padding: 0 5px;
+} */
 .footer-logo img {
   width: 135px;
   height: 40px;
@@ -537,10 +558,7 @@ form > button {
   margin-bottom: 3px;
 }
 
-.fa-phone,
-.fa-location-arrow,
-.fa-circle-info,
-.fa-user {
+.fa-solid {
   color: #677788;
   margin: 0 10px;
 }
